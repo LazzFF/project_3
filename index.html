@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptation.css" />
+    <title>Burger-menu</title>
+  </head>
+  <body>
+    <!-- Разметка для бургер-меню: начало -->
+
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <div class="navbar__hamb">
+          <div class="navbar__hamb-field" id="navbar-hamb-field">
+            <span class="navbar__hamb-bar"></span>
+            <span class="navbar__hamb-bar"></span>
+            <span class="navbar__hamb-bar"></span>
+          </div>
+        </div>
+        <a href="#!"><img src="Атрибуты/Logo.png" class="navbar__logo"></a>
+        <ul class="navbar__menu" id="navbar-menu">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">Shop</a>
+          </li>
+          <li>
+            <a href="#!">Plant Care</a>
+          </li>
+          <li>
+            <a href="#!">Blogs</a>
+          </li>
+          <li>
+            <div class="icons">
+              <img class="icon1" src="Атрибуты/icon1.png" alt="">
+              <img class="icon2" src="Атрибуты/icon2.png" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="button1">
+                <img class="ic" src="Атрибуты/Logout.png" alt="">
+                <button id="modalBtn" class="modal-button">Login</button>
+            </div>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 class="login_register">Login | Register</h2>
+                  <p class="enter">Enter your username and password to login.</p>
+                  <input type="text" id="name" placeholder="almamun_uxui@outlook.com" class="name"> <br>
+                  <input type="password" id="pin" placeholder="1234" class="pin">
+                  <p class="green_text">Forgot password?</p>
+                  <div class="button_register">
+                    <button class="login">Login</button>
+                  </div>
+                </div>
+                <script src="js/window.js"></script>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="popup" id="popup"></div>
+    <script src="./js/script.js"></script>
+
+    <div class="slider-container">
+      <div class="slider">
+        <img src="Атрибуты/Main Banner.png">
+        <img src="Атрибуты/Slide1.png">
+        <img src="Атрибуты/Slide2.png">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+    <script src="js/slider.js"></script>
+
+    <div class="wrapper">
+      <button class="filter-button" data-filter="all">All</button>
+      <button class="filter-button" data-filter="small">Small plants</button>
+      <button class="filter-button" data-filter="big">Big plants</button>
+      <button class="filter-button" data-filter="house">House plant</button>
+      <button class="filter-button" data-filter="potter">Potter plants</button>
+    </div>
+
+        <div class="blocks">
+
+          <div class="blocks__row">
+
+            <div class="block__item potter potter1">
+              <img class="photo1" src="Атрибуты/barberton.png" alt="">
+                <div class="text">
+                    <p>Barberton Daisy</p>
+                    <p class="text__green">$119.00</p>
+                </div>
+            </div>
+
+            <div class="block__item house house1">
+              <img class="photo1" src="Атрибуты/angel wing.png" alt="">
+                <div class="text">
+                    <p>Angel Wing Begonia</p>
+                    <p class="text__green">$169.00</p>
+                </div>
+            </div>
+
+            <div class="block__item big big1">
+              <img class="photo1" src="Атрибуты/african.png" alt="">
+                <div class="text">
+                    <p>African Violet</p>
+                    <p class="text__green">$199.00</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="blocks__row">
+
+            <div class="block__item big big2">
+              <img class="photo1" src="Атрибуты/beach spider.png" alt="">
+                <div class="text">
+                    <p>Beach Spider Lily</p>
+                    <p class="text__green">$129.00</p>
+                </div>
+            </div>
+
+            <div class="block__item small small2">
+              <img class="photo1" src="Атрибуты/Blushing Bromeliad.png" alt="">
+                <div class="text">
+                    <p>Blushing Bromeliad</p>
+                    <p class="text__green">$139.00</p>
+                </div>
+            </div>
+
+            <div class="block__item house house2">
+              <img class="photo1" src="Атрибуты/Aluminum Plant.png" alt="">
+                <div class="text">
+                    <p>Aluminum Plant</p>
+                    <p class="text__green">$179.00</p>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="blocks__row">
+
+            <div class="block__item small small3">
+              <img class="photo1" src="Атрибуты/Bird's Nest Fern.png" alt="">
+                <div class="text">
+                    <p>Bird's Nest Fern</p>
+                    <p class="text__green">$99.00</p>
+                </div>
+            </div>
+
+            <div class="block__item potter potter3">
+              <img class="photo1" src="Атрибуты/Broadleaf Lady Palm.png" alt="">
+                <div class="text">
+                    <p>Broadleaf Lady Palm</p>
+                    <p class="text__green">$59.00</p>
+                </div>
+            </div>
+
+            <div class="block__item house house3">
+              <img class="photo1" src="Атрибуты/Chinese Evergreen.png" alt="">
+                <div class="text">
+                    <p>Chinese Evergreen</p>
+                    <p class="text__green">$39.00</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/filter.js"></script>
+
+
+        <p class="main_title">Our Blog Posts</p>
+        <p class="bottom_title">We are an online plant shop offering a wide range of cheap and trendy plants. </p>
+        <div class="tabs">
+          <div class="tab-buttons">
+              <button class="tab-button" id="defaultOpen" onclick="openTab(event, 'tab1')">Post 1</button>
+              <button class="tab-button" onclick="openTab(event, 'tab2')">Post 2</button>
+              <button class="tab-button" onclick="openTab(event, 'tab3')">Post 3</button>
+          </div>
+      
+          <div id="tab1" class="tab-content">
+            <div class="element">
+              <img class="photo2" src="Атрибуты/01.png" alt="">
+                  <div class="text">
+                      <p class="text_green">September 12 I Read in 6 minutes</p>
+                      <p class="bold">Cactus & Succulent Care Tips</p>
+                      <p class="down">Cacti are succulents are easy care <br> plants for any home or patio.</p>
+                      <p class="read">Read More</p>
+                  </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab-content">
+            <div class="element">
+              <img class="photo2" src="Атрибуты/02.png" alt="">
+                  <div class="text">
+                      <p class="text_green">September 13 I Read in 2 minutes</p>
+                      <p class="bold">Top 10 Succulents for Your Home</p>
+                      <p class="down">Best in hanging baskets. Prefers <br> medium to high light.</p>
+                      <p class="read">Read More</p>
+                  </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-content">
+            <div class="element">
+              <img class="photo2" src="Атрибуты/03.png" alt="">
+                  <div class="text">
+                      <p class="text_green">September 15 I Read in 3 minutes</p>
+                      <p class="bold">Cacti & Succulent Care Tips</p>
+                      <p class="down">Cacti and succulents thrive in <br> containers and because most are..</p>
+                      <p class="read">Read More</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/tabs.js"></script>
+
+        <div class="accordion">
+          <div class="accordion-item">
+              <button class="accordion-button">Garden Care</button>
+              <div class="accordion-content">
+                  <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <button class="accordion-button">Plant Renovation</button>
+              <div class="accordion-content">
+                  <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <button class="accordion-button">Watering Graden</button>
+              <div class="accordion-content">
+                  <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+              </div>
+          </div>
+        </div>
+        <script src="js/accordion.js"></script>
+
+
+    
+  </body>
+</html>
